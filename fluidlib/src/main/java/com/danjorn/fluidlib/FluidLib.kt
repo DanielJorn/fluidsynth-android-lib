@@ -6,7 +6,7 @@ import java.io.File
 private const val SOUNDFONT_NAME = "sndfnt.sf2"
 
 fun setupSynth(context: Context) {
-    System.loadLibrary("native-lib")
+    System.loadLibrary("fluid-lib-android")
     val soundFontPath = copyAssetToTempFile(context, SOUNDFONT_NAME)
     setupSynthExternal(soundFontPath)
 }
