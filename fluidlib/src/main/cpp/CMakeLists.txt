@@ -81,14 +81,14 @@ add_library(preloadable_libiconv SHARED IMPORTED)
 set_target_properties(preloadable_libiconv PROPERTIES IMPORTED_LOCATION ${fluidsynth_DIR}/lib/${ANDROID_ABI}/preloadable_libiconv.so)
 
 # Library that will be called directly from JAVA
-add_library(native-lib1 SHARED native-lib1.cpp)
+add_library(native-lib SHARED native-lib.cpp)
 
 # Specifies the directory where the C or C++ source coude will look the #include <yourlibrary.h> header files
-target_include_directories(native-lib1 PRIVATE ${fluidsynth_DIR}/include)
+target_include_directories(native-lib PRIVATE ${fluidsynth_DIR}/include)
 
 # Link everything alltogether. Notice that native-lib should be the first element in the list.
 target_link_libraries(
-        native-lib1
+        native-lib
         libc++_shared
         libcharset
         libffi
