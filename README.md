@@ -37,3 +37,8 @@ Also, you probably need to call ```closeSynth()``` after you're done using the l
 ```midiToWav(inputPath: String, outPath: String)``` - converts .mid to .wav. 
 
 ```changeInstrument(channel: Int, instrument: Int)``` - PROGRAM_CHANGE MIDI event. Used to change instrument on the given channel.
+
+## Examples 
+
+This repo contains an example of using the lib.
+Also, [here is one more repo](https://github.com/DanielJorn/Beat-Em-Up/tree/c-library) using this lib.
