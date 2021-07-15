@@ -6,7 +6,17 @@ Believe me, configuring FluidSynth for Android is true pain.
 
 Important note: the following lib contains a lotta lazy implementation and\or possible performance leaks and due to its code it should not be used by anyone in any kind of serious\real projects. I told you.
 
+## Preface 
+Read it carefully.https://github.com/FluidSynth/fluidsynth/wiki/BuildingForAndroid#preface
+
+fluidsynth is licensed under LGPL-2.1; [make sure you understand what that means](https://github.com/FluidSynth/fluidsynth/wiki/LicensingFAQ) when using it in your app!
+
 ## Setting up
+
+Read the preface above!
+
+[Seriously, read the preface!!](https://github.com/FluidSynth/fluidsynth/wiki/BuildingForAndroid#Preface)
+
 
 Put this in project-level build.gragle
 
@@ -25,6 +35,11 @@ implementation 'com.github.DanielJorn:fluidsynth-android-lib:0.3'
 ```
 
 ## Usage
+
+Read the preface above!
+
+[Seriously, read the preface!!](https://github.com/FluidSynth/fluidsynth/wiki/BuildingForAndroid#Preface)
+
 
 First of all, you gotta call ```setupSynth(context)``` before using any other functions.
 
