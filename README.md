@@ -21,7 +21,7 @@ allprojects {
 ... and this to app-level build.gradle
 
 ```
-implementation 'com.github.DanielJorn:wavinterpolation:0.4'
+implementation 'com.github.DanielJorn:fluidsynth-android-lib:0.3'
 ```
 
 ## Usage
